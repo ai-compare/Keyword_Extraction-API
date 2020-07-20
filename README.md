@@ -17,7 +17,8 @@ import requests
 headers = {  'x-access-token': 'Enter your API Key'}
 url = 'https://www.ai-compare.com/api/v1/text/create/compare/keyword_extraction'
 ```
-### Select parameters : set your text, the language, the attempted result, and providers APIs you want to run
+### Select parameters 
+Set your text, the language, the attempted result, and providers APIs you want to run :
 ```python
 payload = {'providers': '[\'ibm\', \'cognitives_service\', \'aws\']','text':'I am angry today', 'keywords_to_find': 'neutral','language': 'en-US'}
 ```
