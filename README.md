@@ -1,4 +1,4 @@
-# Keyword_Extraction-API
+# Keyword Extraction - AI-Compare API
 ## Description
 This repositery provides code to implement [AI-Compare Keyword Extraction API](https://www.ai-compare.com/text_apis/keyword_extraction/). [AI-Compare Keyword Extraction API](https://www.ai-compare.com/text_apis/keyword_extraction/) allows to call Keyword Extraction APIs from Google Cloud Platform Natural Language, AWS Comprehend, Microsoft Azure Cognitives Service Language, and IBM Watson Natural Language Understanding. It permits to get results from these providers and compare the results.
 
