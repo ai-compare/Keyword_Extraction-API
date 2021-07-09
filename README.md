@@ -11,7 +11,7 @@ You can find APIs documentation here : https://api.edenai.run/v1/redoc/
 
 ## Usage
 ### Initialization
-Enter your access token and select your API endpoint. You can get your token on your account manager [here](https://www.ai-compare.com/accounts/login/?next=/my_apis/my_account).
+Enter your access token and select your API endpoint. You can get your token on your IAM [here](https://app.edenai.run/admin/user).
 ```python
 import requests
 headers = {  'Authorization': 'Bearer your API Key'}
