@@ -2,7 +2,7 @@
 ## Description
 This repositery provides code to implement Eden AI Keyword Extraction API. Eden AI Keyword Extraction API allows to call Keyword Extraction APIs from multpile keyword extraction providers. It permits to get results from these providers, compare the results, siwtch between providers or combine them.
 
-## What is AI-Compare ?
+## What is Eden AI ?
 [Eden AI](https://www.edanai.co/) is a SaaS providing APIs connected to big (AWS, GCP, etc.) and small AI providers for vision, text, audio, OCR, prediction and translation AI engines. Our solution allows users to compare the performance of these providers APIs according to their data and use them directly via our API thus offering great flexibility and making it very easy to change supplier. In particular, we offer better performance with the "Genius" feature that cleverly combines results from multiple providers.
 
 Eden AI offers community offer (free) when you [create your account for free](https://app.edenai.run/user/login). You can then use [APIs](https://api.edenai.run/v1/redoc/), use the [interface](https://app.edenai.run/bricks/default), manage your account, access to cost management.
@@ -15,7 +15,7 @@ Enter your access token and select your API endpoint. You can get your token on 
 ```python
 import requests
 headers = {  'Authorization': 'Bearer your API Key'}
-url = 'https://dev-api.edenai.run/v1/pretrained/text/keyword_extraction'
+url = 'https://api.edenai.run/v1/pretrained/text/keyword_extraction'
 ```
 ### Select parameters 
 Set your text, the language, the attempted result, and providers APIs you want to run :
