@@ -20,7 +20,7 @@ url = 'https://dev-api.edenai.run/v1/pretrained/text/keyword_extraction'
 ### Select parameters 
 Set your text, the language, the attempted result, and providers APIs you want to run :
 ```python
-payload = {'providers': '[\'ibm\', \'cognitives_service\', \'aws\']','text':'I am angry today', 'keywords_to_find': 'angry','language': 'en-US'}
+payload = {'providers': '[\'ibm\', \'microsoft\', \'aws\']','text':'I am angry today', 'keywords_to_find': 'angry','language': 'en-US'}
 ```
 ### Get results
 ```python
