@@ -1,13 +1,13 @@
-# Keyword Extraction - AI-Compare API
+# Keyword Extraction - Eden AI API
 ## Description
-This repositery provides code to implement [AI-Compare Keyword Extraction API](https://www.ai-compare.com/text_apis/keyword_extraction/). [AI-Compare Keyword Extraction API](https://www.ai-compare.com/text_apis/keyword_extraction/) allows to call Keyword Extraction APIs from Google Cloud Platform Natural Language, AWS Comprehend, Microsoft Azure Cognitives Service Language, and IBM Watson Natural Language Understanding. It permits to get results from these providers and compare the results.
+This repositery provides code to implement Eden AI Keyword Extraction API. Eden AI Keyword Extraction API allows to call Keyword Extraction APIs from multpile keyword extraction providers. It permits to get results from these providers, compare the results, siwtch between providers or combine them.
 
 ## What is AI-Compare ?
-[AI-Compare](https://www.ai-compare.com/) is a SaaS providing APIs connected to big (AWS, GCP, etc.) and small AI providers: [object detection](https://www.ai-compare.com/vision_apis/object_detection), [OCR](https://www.ai-compare.com/vision_apis/ocr), [NLP](https://www.ai-compare.com/text_apis/sentiment_analysis/), [speech-to-text](https://www.ai-compare.com/audio_apis/speech_recognition), custom vision, etc. Our solution allows users to compare the performance of these providers APIs according to their data and use them directly via our API thus offering great flexibility and making it very easy to change supplier. In particular, we offer better performance with the "Genius" feature that cleverly combines results from multiple providers.
+[Eden AI](https://www.edanai.co/) is a SaaS providing APIs connected to big (AWS, GCP, etc.) and small AI providers for vision, text, audio, OCR, prediction and translation AI engines. Our solution allows users to compare the performance of these providers APIs according to their data and use them directly via our API thus offering great flexibility and making it very easy to change supplier. In particular, we offer better performance with the "Genius" feature that cleverly combines results from multiple providers.
 
-AI-Compare offers 2$ free credits when you [create your account for free](https://www.ai-compare.com/accounts/login/?next=/my_apis). You can then use [APIs](https://www.ai-compare.com/v1/redoc/), use the [interface](https://www.ai-compare.com/my_apis), manage your account and have access to all the APIs.
+Eden AI offers community offer (free) when you [create your account for free](https://app.edenai.run/user/login). You can then use [APIs](https://api.edenai.run/v1/redoc/), use the [interface](https://app.edenai.run/bricks/default), manage your account, access to cost management.
 
-You can find APIs documentation here : https://www.ai-compare.com/v1/redoc/
+You can find APIs documentation here : https://api.edenai.run/v1/redoc/
 
 ## Usage
 ### Initialization
@@ -15,12 +15,12 @@ Enter your access token and select your API endpoint. You can get your token on 
 ```python
 import requests
 headers = {  'Authorization': 'Bearer your API Key'}
-url = 'https://www.ai-compare.com/v1/pretrained/text/keyword_extraction'
+url = 'https://dev-api.edenai.run/v1/pretrained/text/keyword_extraction'
 ```
 ### Select parameters 
 Set your text, the language, the attempted result, and providers APIs you want to run :
 ```python
-payload = {'providers': '[\'ibm\', \'cognitives_service\', \'aws\']','text':'I am angry today', 'keywords_to_find': 'neutral','language': 'en-US'}
+payload = {'providers': '[\'ibm\', \'cognitives_service\', \'aws\']','text':'I am angry today', 'keywords_to_find': 'angry','language': 'en-US'}
 ```
 ### Get results
 ```python
@@ -370,17 +370,14 @@ print(response.text.encode('utf8'))
 
 </details>
 
-## FAQ
-Here you can access to AI-Compare [FAQ](https://www.ai-compare.com/faq/).
-
-## Use cases
-We provides on our website some [use cases examples for NLP APIs](https://www.ai-compare.com/use_cases_nlp/)
+## Blog articles
+We provides on our website some [blog articles on AI engines](https://www.edenai.co/blog)
 
 ## Contact
-If you have any question or request, you can contact us at contact@ai-compare.com
+If you have any question or request, you can contact us at contact@edenai.com
 
 ## Terms of use
-You can access to our terms [here](https://www.ai-compare.com/terms/) on our website.
+You can access to our terms [here](https://www.edenai.co/terms) on our website.
 
 #
-![Screenshot](Ai-compare_new.png)
+![Screenshot](https://github.com/ai-compare/Speech_to_text-API/blob/ba9d4f1668d8758141f24240d1287640b4211c63/Logo%20complet%20Eden%20AI%20-%20format%20PNG.png)
