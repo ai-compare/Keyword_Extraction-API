@@ -5,10 +5,10 @@ import requests
 headers = {  'Authorization': 'Bearer your API Key'} #You can get your free API token here https://www.ai-compare.com/accounts/login/?next=/my_apis
 
 # Select API
-url = 'https://www.ai-compare.com/v1/pretrained/text/keyword_extraction'
+url = 'https://api.edenai.run/v1/pretrained/text/keyword_extraction'
 
 # Select providers, and text to analyze
-payload = {'providers': '[\'ibm\', \'cognitives_service\', \'aws\']','text':'I am angry today', 'keywords_to_find': 'neutral','language': 'en-US'}
+payload = {'providers': '[\'ibm\', \'microsoft\', \'aws\']','text':'I am angry today', 'keywords_to_find': 'neutral','language': 'en-US'}
 
 # Request to AI COMPARE
 response = requests.request("POST", url, headers=headers, data = payload, files = files)
